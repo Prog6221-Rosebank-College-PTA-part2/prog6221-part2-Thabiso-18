@@ -1,0 +1,26 @@
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2_MarkupCompile.cache
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\bin\Debug\net8.0-windows\prog paRT2.deps.json
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\bin\Debug\net8.0-windows\prog paRT2.runtimeconfig.json
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\bin\Debug\net8.0-windows\prog paRT2.dll
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\bin\Debug\net8.0-windows\prog paRT2.pdb
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\bin\Debug\net8.0-windows\System.Speech.dll
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\bin\Debug\net8.0-windows\System.Windows.Extensions.dll
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Speech.dll
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Windows.Extensions.dll
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2.csproj.AssemblyReference.cache
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2_MarkupCompile.lref
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2.g.resources
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2.AssemblyInfoInputs.cache
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2.AssemblyInfo.cs
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2.csproj.CoreCompileInputs.cache
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2.csproj.Up2Date
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2.dll
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\refint\prog paRT2.dll
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2.pdb
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\prog paRT2.genruntimeconfig.cache
+C:\Users\Student\source\repos\prog paRT2\prog paRT2\obj\Debug\net8.0-windows\ref\prog paRT2.dll

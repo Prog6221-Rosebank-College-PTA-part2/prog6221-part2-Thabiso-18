@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hAymfV0DXyc=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Student\\source\\repos\\prog paRT2\\prog paRT2\\prog paRT2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Student\\.nuget\\packages\\system.speech\\10.0.8\\system.speech.10.0.8.nupkg.sha512",
+    "C:\\Users\\Student\\.nuget\\packages\\system.windows.extensions\\10.0.8\\system.windows.extensions.10.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
