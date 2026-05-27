@@ -40,7 +40,7 @@ namespace CybersecurityBot
                         Console.ForegroundColor = ConsoleColor.Yellow;
                         Console.WriteLine("\n🔊 [Voice Greeting]: " + greetingMessage);
                         Console.ResetColor();
-                        System.Threading.Thread.Sleep(3000);
+                        System.Threading.Thread.Sleep(3010);
                     }
                 }
                 catch
