@@ -1,0 +1,198 @@
+﻿<Window x:Class="CybersecurityBotWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:CybersecurityBotWPF"
+        Title="Cybersecurity Chatbot"
+        Height="600"
+        Width="850"
+        WindowStartupLocation="CenterScreen"
+        Background="#F5F5F5">
+
+    <Window.Resources>
+
+        <!-- User Message -->
+        <DataTemplate x:Key="UserMessageTemplate">
+            <Border Background="#4A90E2"
+                    CornerRadius="10"
+                    Padding="10"
+                    Margin="50,5,10,5"
+                    HorizontalAlignment="Right">
+
+                <StackPanel>
+                    <TextBlock Text="{Binding Content}"
+                               Foreground="White"
+                               FontSize="15"
+                               TextWrapping="Wrap"/>
+
+                    <TextBlock Text="{Binding Timestamp}"
+                               FontSize="10"
+                               Foreground="LightGray"
+                               HorizontalAlignment="Right"/>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+
+        <!-- Bot Message -->
+        <DataTemplate x:Key="BotMessageTemplate">
+            <Border Background="#DDDDDD"
+                    CornerRadius="10"
+                    Padding="10"
+                    Margin="10,5,50,5"
+                    HorizontalAlignment="Left">
+
+                <StackPanel>
+                    <TextBlock Text="{Binding Content}"
+                               Foreground="Black"
+                               FontSize="14"
+                               TextWrapping="Wrap"/>
+
+                    <TextBlock Text="{Binding Timestamp}"
+                               FontSize="10"
+                               Foreground="Gray"/>
+                </StackPanel>
+            </Border>
+        </DataTemplate>
+
+    </Window.Resources>
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Grid.Row="0"
+                Background="#2C3E50"
+                Padding="15">
+
+            <StackPanel>
+                <TextBlock Text="Cybersecurity Awareness Bot"
+                           FontSize="24"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           HorizontalAlignment="Center"/>
+
+                <TextBlock Text="Learn how to stay safe online"
+                           FontSize="13"
+                           Foreground="LightGray"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <!-- Chat Area -->
+        <ListBox x:Name="ChatListBox"
+                 Grid.Row="1"
+                 Margin="10"
+                 Background="White"
+                 BorderBrush="#CCCCCC"
+                 BorderThickness="1">
+
+            <ListBox.Resources>
+
+                <DataTemplate DataType="{x:Type local:ChatMessage}">
+                    <ContentControl Content="{Binding}">
+                        <ContentControl.Style>
+
+                            <Style TargetType="ContentControl">
+
+                                <Style.Triggers>
+
+                                    <DataTrigger Binding="{Binding IsUser}" Value="True">
+                                        <Setter Property="ContentTemplate"
+                                                Value="{StaticResource UserMessageTemplate}"/>
+                                    </DataTrigger>
+
+                                    <DataTrigger Binding="{Binding IsUser}" Value="False">
+                                        <Setter Property="ContentTemplate"
+                                                Value="{StaticResource BotMessageTemplate}"/>
+                                    </DataTrigger>
+
+                                </Style.Triggers>
+
+                            </Style>
+
+                        </ContentControl.Style>
+                    </ContentControl>
+                </DataTemplate>
+
+            </ListBox.Resources>
+
+        </ListBox>
+
+        <!-- Input Area -->
+        <Border Grid.Row="2"
+                Background="#EEEEEE"
+                Padding="10">
+
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="Auto"/>
+                </Grid.ColumnDefinitions>
+
+                <!-- Textbox -->
+                <TextBox x:Name="InputTextBox"
+                         Grid.Column="0"
+                         Height="35"
+                         FontSize="14"
+                         Margin="0,0,10,0"
+                         VerticalContentAlignment="Center"
+                         KeyDown="InputTextBox_KeyDown"/>
+
+                <!-- Send Button -->
+                <Button x:Name="SendButton"
+                        Grid.Column="1"
+                        Content="Send"
+                        Width="80"
+                        Height="35"
+                        Margin="5"
+                        Background="#4A90E2"
+                        Foreground="White"
+                        Click="SendButton_Click"/>
+
+                <!-- Voice Button -->
+                <Button x:Name="VoiceButton"
+                        Grid.Column="2"
+                        Content="Voice"
+                        Width="80"
+                        Height="35"
+                        Margin="5"
+                        Background="#E67E22"
+                        Foreground="White"
+                        Click="VoiceButton_Click"/>
+
+                <!-- Clear Button -->
+                <Button x:Name="ClearButton"
+                        Grid.Column="3"
+                        Content="Clear"
+                        Width="80"
+                        Height="35"
+                        Margin="5"
+                        Background="#7F8C8D"
+                        Foreground="White"
+                        Click="ClearButton_Click"/>
+
+            </Grid>
+        </Border>
+
+        <!-- Status Bar -->
+        <StatusBar Grid.Row="3"
+                   Background="#2C3E50">
+
+            <StatusBarItem>
+                <TextBlock x:Name="StatusText"
+                           Foreground="White"
+                           Text="System Ready"/>
+            </StatusBarItem>
+
+        </StatusBar>
+
+    </Grid>
+</Window>
